@@ -30,7 +30,6 @@ Thumbs.db
 .env-*
 /config/blog.php
 /sql
-composer.lock
 
 ### ASSET EXCLUSIONS ###
 /ref
