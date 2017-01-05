@@ -1,0 +1,61 @@
+.choosechannel{
+    text-align: center;
+    font-family: "ginesonorm_bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 32px;
+    color: black;
+}
+.btn.btn-lg.btn-primary.btn-block.twitter{
+    text-align: center;
+    margin-left: -80px;
+	margin-top: 35px;
+    height: 90px; 
+    width: 50px;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 17px;
+}
+.btn.btn-lg.btn-primary.btn-block.facebook{
+    text-align: center;
+	margin-top: -113px;
+    margin-left: 170px;
+    height: 90px;
+    width: 50px;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 17px;
+}
+.btn.btn-lg.btn-primary.btn-block.instagram{
+    text-align: center;
+	margin-top: 10px;
+    margin-left: -80px;
+    height: 90px;
+    width: 50px;
+    color: #ffffff;
+    padding: 20px;
+    padding-top: 20px;
+    padding-left: 10px; 
+    font-size: 17px;
+}
+.btn.btn-lg.btn-primary.btn-block.google{
+    text-align: center;
+    margin-top: -113px;
+    margin-left: 170px;
+    height: 90px;
+    width: 50px;
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 17px;
+}
+.dynamicnumber{
+    margin-left: 40px;
+}
+.dynamicnumber label{
+    margin-top: -10px;
+    font-size: 40px;
+    color: red;
+}
+.row.panel-boy{
+    float: left;
+    margin-left: -155px;
+}
+

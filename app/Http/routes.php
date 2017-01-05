@@ -18,14 +18,15 @@
 */
 
 // PAGE ROUTE ALIASES
+Route::get('landing', function () {
+    return redirect('/landing');
+});
+
 Route::get('home', function () {
-    return redirect('/');
+    return view('pages/home');
 });
-Route::get('app', function () {
-    return redirect('/');
-});
-Route::get('dashboard', function () {
-    return redirect('/');
+Route::get('/', function () {
+    return view('index');
 });
 
 // ALL AUTHENTICATION ROUTES - HANDLED IN THE CONTROLLERS
@@ -48,16 +49,13 @@ Route::get('/social/handle/{provider}', [
 	'uses' 	=> 'Auth\AuthController@getSocialHandle'
 ]);
 
-// AUTHENTICATION ALIASES/REDIRECTS
-Route::get('login', function () {
-    return redirect('auth/login');
-});
+
 Route::get('logout', function () {
     return redirect('auth/logout');
 });
-Route::get('register', function () {
-    return redirect('auth/register');
-});
+//Route::get('register', function () {
+   // return redirect('auth/register');
+//});
 Route::get('reset', function () {
     return redirect('password/email');
 });
@@ -66,10 +64,10 @@ Route::get('reset', function () {
 Route::group(['middleware' => 'auth'], function () {
 
 	// HOMEPAGE ROUTE
-	Route::get('/', [
+	/*Route::get('/', [
 	    'as' 		=> 'user',
 	    'uses' 		=> 'UserController@index'
-	]);
+	]);*/
 
 	// INCEPTIONED MIDDLEWARE TO CHECK TO ALLOW ACCESS TO CURRENT USER ONLY
 	Route::group(['middleware'=> 'currentUser'], function () {
@@ -128,6 +126,19 @@ Route::group(['middleware' => 'editor'], function () {
 	    echo 'Welcome to your EDITOR page '. Auth::user()->email .'.';
 	});
 
+});
+Route::get('/login-influencer', function () {
+    return view('auth.login-influencer');
+});
+
+Route::get('/login-advertiser', function () {
+    return view('auth.login-advertiser');
+});
+Route::get('/signup-influencer', function () {
+    return view('auth.signup-influencer');
+});
+Route::get('/signup-advertiser', function () {
+    return view('auth.signup-advertiser');
 });
 
 //***************************************************************************************//

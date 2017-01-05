@@ -34,7 +34,7 @@
 	</head>
 	<body>
 
-		@include('partials.nav')
+		
 
 		@yield('content')
 
@@ -44,5 +44,6 @@
 		{!! HTML::script('//maps.googleapis.com/maps/api/js?key='.env("GOOGLEMAPS_API_KEY").'&libraries=places&dummy=.js', array('type' => 'text/javascript')) !!}
 		@yield('template_scripts')
 
+		@include('partials.footer')
 	</body>
 </html>

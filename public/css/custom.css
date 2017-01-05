@@ -1,0 +1,180 @@
+/****** 
+
+GLOBAL 
+
+******/
+.page-header {
+    border-bottom: none;
+    padding:0;
+}
+.page-header.green {
+    background-color: #18b56f;
+}
+.page-header.light-grey {
+    background-color: #f5f5f5;
+}
+.page-header.dark-blue {
+    background-color: #1a2c3d;
+}
+.page-header h5 {
+    color:#FFF;
+    text-transform: uppercase;
+    padding:20px;
+}
+.my-account .button-tabs.vertical > .content {
+    padding-left:0;
+}
+
+
+/****** 
+
+FILTERING TABLE 
+
+******/
+table.js-dynamitable.table-filtered td {
+    font-family: 'ginesocond_demi';
+    font-size: 16px;
+    color: #333;
+}
+table.js-dynamitable.table-filtered td:nth-child(4) {
+    text-align: right;
+}
+
+table.js-dynamitable th:after,
+table.js-dynamitable th:before {
+    display: none;
+}
+table.js-dynamitable thead {
+    background-color:#1a2c3d;
+    color: #FFF;
+    text-transform:uppercase;
+}
+table.js-dynamitable thead span {
+    color:#18b56f;
+}
+
+input.minimal {
+    height:37px;
+}
+select.minimal {
+    height: 37px;
+    background-image:
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+select.minimal:focus {
+    background-image:
+        linear-gradient(45deg, green 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, green 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+
+/*****
+
+SORTER TABLE
+
+*****/
+.data-sorter .button-tabs .tabs {
+    width:100%
+}
+.data-sorter .button-tabs .tab-title {
+    width:100%;
+}
+.data-sorter .button-tabs .tabs > li {
+    width:25%;
+}
+table.js-dynamitable.sorted-data tr> td {
+    font-family: 'ginesonorm_bold';
+    font-size: 16px;
+    color: #333;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(1) {}
+table.js-dynamitable.sorted-data tr> td:nth-child(1) img {
+    display: block;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(1) span {
+    display: block;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(1) span:nth-of-type(n+1){
+    font-family: 'ginesocond_demi';
+    font-size:22px;
+    letter-spacing: 2px;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(1) span:nth-child(2n-1){
+    font-family: 'ginesocond_demi';
+    font-size:14px;
+    letter-spacing: 1px;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(n+2):nth-child(-n+7) {
+    vertical-align: middle;
+    font-family: 'ginesocond_demi';
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(n+2) {
+    text-align: center;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(n+2):nth-child(-n+3) {
+    font-size:24px;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(n+5):nth-child(-n+6) span {
+    display: block;
+}
+table.js-dynamitable.sorted-data tr> td:nth-child(n+5):nth-child(-n+6) span:nth-child(1) {
+    font-size: 24px;
+}
+table.js-dynamitable.sorted-data tr> td ul {
+    list-style: none;
+    line-height: 1.2em;
+    font-size: 15px;
+    font-family: 'ginesocond_demi';
+    text-align: left;
+}
+table.js-dynamitable.sorted-data tr> td ul li:before {
+    content: "";
+    line-height: 2em;
+    width: .8em;
+    height: .8em;
+    background-color: #18b56f;
+    float: left;
+    margin: .25em .25em 0;
+    border-radius: 50%;
+}
+.data-sorter .button-tabs .tab-title {
+    text-align: left;
+    color: #333;
+}
+.data-sorter .button-tabs .tab-title i {
+    font-size: 18px;
+}
+.data-sorter .button-tabs .tab-title:hover {
+    background-color:#AAA;
+}
+.data-sorter .button-tabs .active .tab-title:hover {
+    background-color:#18b56f;
+}
+/*****
