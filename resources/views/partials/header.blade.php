@@ -49,11 +49,7 @@
                                                 ADVERTISER
                                             </a>
                                         </li>
-                                        <li>
-                                            <a href="/logout">
-                                                logout
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
