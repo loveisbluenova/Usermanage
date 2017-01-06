@@ -22,9 +22,7 @@ Route::get('landing', function () {
     return redirect('/landing');
 });
 
-Route::get('home', function () {
-    return view('pages/home');
-});
+
 Route::get('/', function () {
     return view('index');
 });
@@ -64,10 +62,10 @@ Route::get('reset', function () {
 Route::group(['middleware' => 'auth'], function () {
 
 	// HOMEPAGE ROUTE
-	/*Route::get('/', [
+	Route::get('/home', [
 	    'as' 		=> 'user',
 	    'uses' 		=> 'UserController@index'
-	]);*/
+	]);
 
 	// INCEPTIONED MIDDLEWARE TO CHECK TO ALLOW ACCESS TO CURRENT USER ONLY
 	Route::group(['middleware'=> 'currentUser'], function () {
