@@ -21,7 +21,7 @@
             <nav>
                 <div class="nav-bar">
                     <div class="module left">
-                        <a href="index.html">
+                        <a href="index">
                             <img class="logo logo-light" alt="INFLUINDEXy" src="../img/logo-light.png" />
                             <img class="logo logo-dark" alt="INFLUINDEX" src="../img/logo-dark.png" />
                         </a>

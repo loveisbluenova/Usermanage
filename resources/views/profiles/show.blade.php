@@ -15,7 +15,432 @@
 @endsection
 
 @section('content')
-	<div class="container">
+	<div class="nav-container">
+            <a id="top"></a>
+            <nav>
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <img class="logo logo-light" alt="INFLUINDEX" src="img/logo-light.png" />
+                            <img class="logo logo-dark" alt="INFLUINDEX" src="img/logo-dark.png" />
+                        </a>
+                        <p class="text-logo">A DATA DRIVEN APPROACH TO INFLUENCER DISOVERY</p>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li class="has-dropdown">
+                                    <a href="#">
+                                        Jaclyn Hill
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="signup-influencer.html">
+                                                INFLUENCER
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="signup-advertiser.html">
+                                                ADVERTISER
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+                    </div>
+                    <!--end of module group-->
+                </div>
+            </nav>
+        </div>
+        <div class="main-container">
+            
+            <section class="pb0">
+                <div class="container-fluid">
+                    <div class="page-header dark-blue mb72">
+                        <h5>My Profile</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="profile-pic pb16">
+                                <img alt="Profile Avatar" src="img/profile-avatar.jpg">
+                            </div>
+                            <div class="block-green">
+                                <a href="#">Change Profile Picture</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3 col-sm-5 col-sm-offset-1">
+                            <h3 class="color-dark-blue">Rachel Jaclyn Hill</h3>
+                            <div class="profile-data">
+                                <ul>
+                                    <li>JACYLNHILL@GMAIL.COM</li>
+                                    <li>0821-123-4567</li>
+                                    <li>www.jaclynhill.com</li>
+                                    <li>Bergabung: December 2016</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="my-account pt0">
+                <div class="container-fluid">
+                    <div class="page-header dark-blue">
+                        <h5>My Account</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="tabbed-content button-tabs social-accounts">
+                                <ul class="tabs">
+                                    <li class="active">
+                                        <div class="tab-title">
+                                            <i class="ti-instagram" style="color:#e01575 !important"></i>
+                                            <span style="margin-left:10px;">Instagram</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-facebook" style="color:#0b3f94 !important"></i> 
+                                            <span style="margin-left:10px;">Facebook</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-twitter-alt" style="color:#19aee5 !important"></i>
+                                            <span style="margin-left:10px;">Twitter</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-title">
+                                            <i class="ti-youtube" style="color:#dc5043 !important"></i>
+                                            <span style="margin-left:10px;">Youtube</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="content">
+                                    <li class="active">
+                                        <div class="tab-content">
+                                            <div class="tabbed-content button-tabs vertical mt24">
+                                                <ul class="tabs">
+                                                    <li class="active">
+                                                        <div class="tab-title">
+                                                            <span>General Info</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Let's Talk Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Promotion Fee</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Cool Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Engagement</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Shorter Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Follower</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Longer Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-content">
+                                            <div class="tab-content">
+                                            <div class="tabbed-content button-tabs vertical mt24">
+                                                <ul class="tabs">
+                                                    <li class="active">
+                                                        <div class="tab-title">
+                                                            <span>General Info</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Let's Talk Tabs</h5>
+                                                            <hr>
+                                                            <!--<dl class="dl-horizontal">
+                                                                <dt>Instagram Account</dt>
+                                                                <dd>JacylnHill</dd>
+                                                                <dt>Display Name</dt>
+                                                                <dd>Rachel Jacyln Hill</dd>
+                                                                <dt>Category</dt>
+                                                                <dd>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Lifestyle
+                                                                            </label>
+                                                                        </li>
+                                                                        <li>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Bicyle
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Advertising
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Quotes
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Information
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Public Figure
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="" id="" value="">
+                                                                            Entertain
+                                                                            </label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </dd>
+                                                            </dl>-->
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Promotion Fee</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Cool Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Engagement</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Shorter Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Follower</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Longer Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-content">
+                                            <div class="tabbed-content button-tabs vertical mt24">
+                                                <ul class="tabs">
+                                                    <li class="active">
+                                                        <div class="tab-title">
+                                                            <span>General Info</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Let's Talk Tabs</h5>
+                                                            <hr>
+                                                            
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Promotion Fee</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Cool Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Engagement</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Shorter Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Follower</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Longer Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="tab-content">
+                                            <div class="tabbed-content button-tabs vertical mt24">
+                                                <ul class="tabs">
+                                                    <li class="active">
+                                                        <div class="tab-title">
+                                                            <span>General Info</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Let's Talk Tabs</h5>
+                                                            <hr>
+                                                            
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Promotion Fee</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Cool Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Engagement</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Shorter Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tab-title">
+                                                            <span>Follower</span>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <h5 class="uppercase">Longer Tabs</h5>
+                                                            <hr>
+                                                            <p>
+                                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+                                                            </p>
+                                                            <p>
+                                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est.
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+          
+        </div>
+<!--	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-default">
@@ -119,9 +544,24 @@
 				</div>
 			</div>
 		</div>
-	</div>
-@endsection
+	</div>-->
 
+
+<!--<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <img src="/uploads/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
+            <h2>{{ $user->name }}'s Profile</h2>
+            <form enctype="multipart/form-data" action="{{ $user->avatar}}" method="POST">
+                <label>Update Profile Image</label>
+                <input type="file" name="avatar">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <input type="submit" class="pull-right btn btn-sm btn-primary">
+            </form>
+        </div>
+    </div>
+</div>-->
+@endsection
 @section('template_scripts')
 
 	@include('scripts.google-maps-geocode-and-map')

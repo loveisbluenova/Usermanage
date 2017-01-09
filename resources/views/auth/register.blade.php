@@ -1,5 +1,5 @@
 @extends('app')
-
+	@include('partials.header')
 @section('template_title')
 	Register
 @endsection

@@ -2,9 +2,10 @@
     text-align: center;
     font-family: "ginesonorm_bold","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 32px;
+    margin-bottom: 20px;
     color: black;
 }
-.btn.btn-lg.btn-primary.btn-block.twitter{
+.btn.btn-lg.btn-primary.btn-block.twitter.butt{
     text-align: center;
     margin-left: -80px;
 	margin-top: 35px;
@@ -14,17 +15,17 @@
     padding: 20px;
     font-size: 17px;
 }
-.btn.btn-lg.btn-primary.btn-block.facebook{
+.btn.btn-lg.btn-primary.btn-block.facebook.butt{
     text-align: center;
 	margin-top: -113px;
     margin-left: 170px;
     height: 90px;
-    width: 50px;
+    width: 70px;
     color: #ffffff;
     padding: 20px;
     font-size: 17px;
 }
-.btn.btn-lg.btn-primary.btn-block.instagram{
+.btn.btn-lg.btn-primary.btn-block.instagram.butt{
     text-align: center;
 	margin-top: 10px;
     margin-left: -80px;
@@ -36,7 +37,7 @@
     padding-left: 10px; 
     font-size: 17px;
 }
-.btn.btn-lg.btn-primary.btn-block.google{
+.btn.btn-lg.btn-primary.btn-block.google.butt{
     text-align: center;
     margin-top: -113px;
     margin-left: 170px;
@@ -57,5 +58,8 @@
 .row.panel-boy{
     float: left;
     margin-left: -155px;
+}
+.row h3{
+    text-align: center;
 }
 

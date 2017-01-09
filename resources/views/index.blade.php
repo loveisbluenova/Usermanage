@@ -103,27 +103,33 @@
             </section>
             <section class="pt-sm-16 pb-sm-16 pt-xs-16 pb-xs-16">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 text-center mb-xs-24">
-                            <img alt="Think you are an Influencer? Join the Index for more opportunities" src="../img/03_think.png">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 text-center mb-xs-24">
+                                <img alt="Think you are an Influencer? Join the Index for more opportunities" src="../img/03_think.png">
+                            </div>
+                         <div id="social-signup">    
+                            <div class="col-md-6 col-sm-6">
+                                <div class="choosechannel">Choose Your Channel</div>
+                                <div class="form-group">
+    								<div class="col-sm-6 col-sm-offset-3">
+                                        
+    									{!! HTML::link(route('social.redirect', ['provider' => 'twitter']), 'Signup with Twitter', array('class' => 'btn btn-lg btn-primary btn-block twitter butt')) !!}
+                                        
+    									{!! HTML::link(route('social.redirect', ['provider' => 'facebook']), 'Signup Facebook', array('class' => 'btn btn-lg btn-primary btn-block facebook butt')) !!}
+                                        
+    									{!! HTML::link(route('social.redirect', ['provider' => 'instagram']), 'Signup with Instagram', array('class' => 'btn btn-lg btn-primary btn-block instagram butt')) !!}
+                                        
+    									{!! HTML::link(route('social.redirect', ['provider' => 'google']), 'Signup with Google', array('class' => 'btn btn-lg btn-primary btn-block google butt')) !!}
+    															
+    								
+    								</div>
+
+    							</div>
+
+                            </div>
+
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="choosechannel">Choose Your Channel</div>
-                            <div class="form-group">
-								<div class="col-sm-6 col-sm-offset-3">
-
-									{!! HTML::link(route('social.redirect', ['provider' => 'twitter']), 'Signup with Twitter', array('class' => 'btn btn-lg btn-primary btn-block twitter')) !!}
-									{!! HTML::link(route('social.redirect', ['provider' => 'facebook']), 'Signup Facebook', array('class' => 'btn btn-lg btn-primary btn-block facebook')) !!}
-									{!! HTML::link(route('social.redirect', ['provider' => 'instagram']), 'Signup with Instagram', array('class' => 'btn btn-lg btn-primary btn-block instagram')) !!}
-									{!! HTML::link(route('social.redirect', ['provider' => 'google']), 'Signup with Google', array('class' => 'btn btn-lg btn-primary btn-block google')) !!}
-																	
-								
-								</div>
-
-							</div>
-
-                        </div>
-
+                        
                     </div>
                     
                 </div>

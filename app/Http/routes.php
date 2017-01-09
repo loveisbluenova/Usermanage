@@ -18,13 +18,16 @@
 */
 
 // PAGE ROUTE ALIASES
-Route::get('landing', function () {
-    return redirect('/landing');
-});
 
 
 Route::get('/', function () {
     return view('index');
+});
+Route::get('nav', function () {
+    return view('partials.nav');
+});
+Route::get('/index', function () {
+    return view('/');
 });
 
 // ALL AUTHENTICATION ROUTES - HANDLED IN THE CONTROLLERS

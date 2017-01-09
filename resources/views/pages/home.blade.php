@@ -5,12 +5,13 @@
 @endsection
 
 @section('content')
- <div class="nav-container">
+
+  <div class="nav-container">
             <a id="top"></a>
             <nav>
                 <div class="nav-bar">
                     <div class="module left">
-                        <a href="index.html">
+                        <a href="/">
                             <img class="logo logo-light" alt="INFLUINDEX" src="img/logo-light.png" />
                             <img class="logo logo-dark" alt="INFLUINDEX" src="img/logo-dark.png" />
                         </a>
@@ -24,20 +25,15 @@
                             <ul class="menu">
 
                                 <li class="has-dropdown">
-                                    <a href="#">
-                                        BRAND COMPANY
-                                    </a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }}</a>
                                     <ul>
                                         <li>
-                                            <a href="#">
-                                                KANA DIGITAL
-                                            </a>
+                                            
+                                                <li>{!! HTML::link(url('/profile/'.Auth::user()->name), Lang::get('titles.profile')) !!}</li>
+                                                <li>{!! HTML::link(url('/auth/logout'), Lang::get('titles.logout')) !!}</li>
+                                            
                                         </li>
-                                        <li>
-                                            <a href="#">
-                                                SONAR PLATFORM
-                                            </a>
-                                        </li>
+                                        
                                     </ul>
                                 </li>
                             </ul>
@@ -47,7 +43,7 @@
                     <!--end of module group-->
                 </div>
             </nav>
-        </div>
+  </div>
   <div class="main-container">
             <section>
                 <div class="container-fluid data-filter">

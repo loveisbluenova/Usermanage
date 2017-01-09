@@ -14,7 +14,7 @@
                             <img alt="Register as Influencer" src="img/register-advertiser.png">
                         </div>
                         <div class="col-md-6 col-sm-6">
-                            <h3>Sign Up</h3>
+                            <h3>Log In</h3>
                             <div class="panel-body">
 
                                     @if (count($errors) > 0)
@@ -33,38 +33,47 @@
                                         </div>
                                 
                                     @endif
+                            </div>
+                                {!! Form::open(array('url' => 'auth/login', 'method' => 'POST', 'class' => 'lockscreen-credentials form-horizontal', 'role' => 'form')) !!}
+                                    <div class="form-group has-feedback">
+                                        {!! Form::label('email', Lang::get('auth.email') , array('class' => 'col-sm-4 control-label')); !!}
+                                        <div class="col-sm-6">
+                                            {!! Form::email('email', null, array('id' => 'email', 'class' => 'form-control', 'placeholder' => Lang::get('auth.ph_email'), 'required' => 'required',)) !!}
+                                            <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        {!! Form::label('password', Lang::get('auth.password') , array('class' => 'col-sm-4 control-label')); !!}
+                                        <div class="col-sm-6">
+                                            {!! Form::password('password', array('id' => 'password', 'class' => 'form-control', 'placeholder' => Lang::get('auth.ph_password'), 'required' => 'required',)) !!}
+                                            <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-6 col-xs-offset-1 col-sm-offset-4">
+                                            <div class="checkbox">
+                                                {!! Form::checkbox('remember', 'remember', true, array('id' => 'remember')); !!}
+                                                {!! Form::label('remember', Lang::get('auth.rememberMe')); !!}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                        {!! Form::button(Lang::get('auth.login'), array('class' => 'btn btn-primary','type' => 'submit')) !!}
+                                        {!! HTML::link(url('/password/email'), Lang::get('auth.forgot'), array('id' => 'forgot', 'class' => 'btn btn-link')) !!}
+                                    </div>
                                 </div>
-                    {!! Form::open(array('url' => 'auth/login', 'method' => 'POST', 'class' => 'lockscreen-credentials form-horizontal', 'role' => 'form')) !!}
-                        <div class="form-group has-feedback">
-                            {!! Form::label('email', Lang::get('auth.email') , array('class' => 'col-sm-4 control-label')); !!}
-                            <div class="col-sm-6">
-                                {!! Form::email('email', null, array('id' => 'email', 'class' => 'form-control', 'placeholder' => Lang::get('auth.ph_email'), 'required' => 'required',)) !!}
-                                <span class="glyphicon glyphicon-envelope form-control-feedback" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="form-group has-feedback">
-                            {!! Form::label('password', Lang::get('auth.password') , array('class' => 'col-sm-4 control-label')); !!}
-                            <div class="col-sm-6">
-                                {!! Form::password('password', array('id' => 'password', 'class' => 'form-control', 'placeholder' => Lang::get('auth.ph_password'), 'required' => 'required',)) !!}
-                                <span class="glyphicon glyphicon-lock form-control-feedback" aria-hidden="true"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-6 col-xs-offset-1 col-sm-offset-4">
-                                <div class="checkbox">
-                                    {!! Form::checkbox('remember', 'remember', true, array('id' => 'remember')); !!}
-                                    {!! Form::label('remember', Lang::get('auth.rememberMe')); !!}
+                                <p class="text-center">Or</p>
+                                <div class="form-group">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                        {!! HTML::link(route('social.redirect', ['provider' => 'facebook']), 'Facebook', array('class' => 'btn btn-lg btn-primary btn-block facebook')) !!}
+                                        {!! HTML::link(route('social.redirect', ['provider' => 'twitter']), 'Twitter', array('class' => 'btn btn-lg btn-primary btn-block twitter')) !!}
+                                        {!! HTML::link(route('social.redirect', ['provider' => 'google']), 'Google +', array('class' => 'btn btn-lg btn-primary btn-block google')) !!}
+                                        {!! HTML::link(route('social.redirect', ['provider' => 'instagram']), 'Instagram', array('class' => 'btn btn-lg btn-primary btn-block instagram')) !!}                               
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-6 col-sm-offset-3">
-                                {!! Form::button(Lang::get('auth.login'), array('class' => 'btn btn-primary','type' => 'submit')) !!}
-                               
-                            </div>
-                        </div>
                         
-                    </div>    
+                            </div>    
                             
                         </div>
 
@@ -73,5 +82,6 @@
                 </div>
                     
             </section>
+        </div>
     
 @endsection
