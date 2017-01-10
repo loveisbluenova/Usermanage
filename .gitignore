@@ -22,7 +22,7 @@ Thumbs.db
 /.idea/*
 
 ### DIFFERENT TYPE OF MASTER CONFIGS ###
-
+.env
 .env-dev
 .env-live
 .env.dev
