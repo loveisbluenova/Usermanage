@@ -45,5 +45,6 @@
 		@yield('template_scripts')
 
 		@include('partials.footer')
+		
 	</body>
 </html>

@@ -10,6 +10,10 @@ var mr_firstSectionHeight,
 $(document).ready(function() { 
     "use strict";
 
+    $('.form-changepicture input[type="file"]').change(function() {
+        $('.form-changepicture').submit();
+    });
+
     // Smooth scroll to inner links
     
     $('.inner-link').each(function(){

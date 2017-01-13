@@ -33,17 +33,18 @@
                         <div class="module left">
                             <ul class="menu">
                                 <li class="has-dropdown">
-                                    <a href="#">
-                                        Jaclyn Hill
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
+                                        <img src="/uploads/avatars/{{ Auth::user()->avatar }}" style="width:32px; height:32px; position:absolute; top:10px; left:10px; border-radius:50%">
+                                        {{ Auth::user()->name }}
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="signup-influencer.html">
+                                            <a href="signup-influencer">
                                                 INFLUENCER
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="signup-advertiser.html">
+                                            <a href="signup-advertiser">
                                                 ADVERTISER
                                             </a>
                                         </li>
@@ -67,14 +68,22 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="profile-pic pb16">
-                                <img alt="Profile Avatar" src="img/profile-avatar.jpg">
+                                 <img src="/uploads/avatars/{{ $user->avatar }}" style="width:292px; height:292px;">
                             </div>
                             <div class="block-green">
                                 <a href="#">Change Profile Picture</a>
+                               
                             </div>
+                             <form enctype="multipart/form-data" action="../update_avatar" method="POST" class="form-changepicture">
+                                    
+                                    <input type="file" name="avatar">
+                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    <!-- <input type="submit" class="pull-right btn btn-sm btn-primary"> -->
+                                </form>
                         </div>
+                                             
                         <div class="col-md-6 col-md-offset-3 col-sm-5 col-sm-offset-1">
-                            <h3 class="color-dark-blue">Rachel Jaclyn Hill</h3>
+                            <h3 class="color-dark-blue">{{ Auth::user()->name }}</h3>
                             <div class="profile-data">
                                 <ul>
                                     <li>JACYLNHILL@GMAIL.COM</li>
@@ -440,7 +449,7 @@
 
           
         </div>
-<!--	<div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-default">
@@ -544,23 +553,13 @@
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 
 
-<!--<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <img src="/uploads/avatars/{{ $user->avatar }}" style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
-            <h2>{{ $user->name }}'s Profile</h2>
-            <form enctype="multipart/form-data" action="{{ $user->avatar}}" method="POST">
-                <label>Update Profile Image</label>
-                <input type="file" name="avatar">
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                <input type="submit" class="pull-right btn btn-sm btn-primary">
-            </form>
-        </div>
-    </div>
-</div>-->
+<div class="container">
+    
+</div>
+
 @endsection
 @section('template_scripts')
 

@@ -168,3 +168,7 @@ Route::get('/signup-advertiser', function () {
 //     'as' 			=> 'user',
 //     'uses' 			=> 'UsersController@index'
 // ]);
+Route::get('profile', 'UserController@profile');
+Route::match(['get', 'post'], 'update_avatar', [
+		'uses' 			=> 'UserController@update_avatar'
+]);

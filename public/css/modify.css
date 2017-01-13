@@ -63,3 +63,20 @@
     text-align: center;
 }
 
+.form-changepicture {
+    bottom: 0;
+    margin-bottom: 0;
+    position: absolute;
+    opacity: 0;
+    width: calc(100% - 30px);
+}
+
+.block-green {
+    margin-bottom: 0;
+}
+
+.form-changepicture input[type="file"] {
+    margin-bottom: 0;
+    min-height: 50px;
+    width: 100%;
+}

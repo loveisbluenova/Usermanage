@@ -163,6 +163,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
 
         SocialiteProviders\Manager\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class
 	],
 
 	/*
@@ -216,6 +217,7 @@ return [
 
         // ADD SOCIALITE
         'Socialite' 	=> Laravel\Socialite\Facades\Socialite::class,
+        'Image' => Intervention\Image\Facades\Image::class
 
 	],
 

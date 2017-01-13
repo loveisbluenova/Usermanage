@@ -12,6 +12,7 @@
         <link href="../css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
         <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/modify.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     </head>
     <body>
@@ -53,6 +54,7 @@
             </footer>
         </div>
         <script src="../js/jquery.min.js"></script>
+        <script src="js/dynamitable.jquery.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         
         <script src="../js/flexslider.min.js"></script>
